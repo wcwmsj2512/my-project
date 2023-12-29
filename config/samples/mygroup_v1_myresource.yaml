@@ -1,0 +1,13 @@
+apiVersion: mygroup.example.com/v1
+kind: MyResource
+metadata:
+  labels:
+    app.kubernetes.io/name: myresource
+    app.kubernetes.io/instance: myresource-sample
+    app.kubernetes.io/part-of: myproject
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: myproject
+  name: myresource-sample
+spec:
+  # TODO(user): Add fields here
+  message: "Hello, Kubebuilder!"
